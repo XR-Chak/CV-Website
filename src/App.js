@@ -12,6 +12,7 @@ function App() {
   return (
   <div>
     <Navbar/>
+    <p>testing</p>
     <div>
       <i>Hello world!</i>
       <button onClick={handleClick}>Click me!!!!</button>
