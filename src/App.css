@@ -1,5 +1,22 @@
+
 .App {
   text-align: center;
+}
+
+body{
+  background: #282c34;
+}
+
+i{
+  font-size: 50px;
+  color: brown;
+}
+
+button{
+  border: 0px solid blanchedalmond;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: medium;
 }
 
 .App-logo {
@@ -35,4 +52,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+div{
+  position: relative;
+  text-align: center;
+  top: 120px;
 }
