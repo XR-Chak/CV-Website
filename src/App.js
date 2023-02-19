@@ -1,24 +1,26 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useEffect,useState } from 'react';
-import Navbar from './Navbar';
-import { AppBar } from '@mui/material';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import Experience from './pages/Experience';
+import Navbar from './components/Navbar';
 function App() {
-  let [num,setNum] = useState(0);
-  let handleClick=()=>{
-    console.log("u clicked me");
-    setNum(num+1);
-  }
   
   return (
-  <div>
+   <div className='App'>
+   <Router>
     <Navbar/>
-    <p>testing</p>
-    <div>
-      <i>Hello world!</i>
-      <button onClick={handleClick}>Click me!!!!</button>
-      {num}
-    </div>
-  </div> 
+    <Routes>  
+     <Route path="/Projects" element={<Projects/>}/>
+     <Route path="/Experience" element={<Experience/>}/>
+     <Route path="/" exact element={<Home/>}/>
+    </Routes>
+   </Router>
+ 
+     
+   </div> 
+   
   );
 }
 
