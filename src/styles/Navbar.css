@@ -1,6 +1,6 @@
 .navbar {
     width: 100%;
-    height: 100px;
+    height: 100%;
     background: #21325e;
   }
   
@@ -55,7 +55,7 @@
   }
   
   @media only screen and (max-width: 900px) {
-    .navbar a {
+    .navbar :link {
       width: 70px;
     }
   }
